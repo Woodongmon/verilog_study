@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/03/2025 03:27:39 AM
+// Create Date: 12/03/2025 10:29:29 AM
 // Design Name: 
-// Module Name: half_adder_structural
+// Module Name: tb_reference
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,12 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module half_adder_structural(
 
-	input a,b,
-	output sum,carry);
-
-	assign sum	=	a^|b;
-	assign carry	=	a&b;
-
+module tb_reference(
+    input d
+    );
 endmodule
