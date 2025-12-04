@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Dec  4 12:14:30 2025
+# Process ID: 93532
+# Current directory: /home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.runs/synth_1
+# Command line: vivado -log FND_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FND_top.tcl
+# Log file: /home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.runs/synth_1/FND_top.vds
+# Journal file: /home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.runs/synth_1/vivado.jou
+# Running On        :woodongnotbook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.3 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz
+# CPU Frequency     :2304.008 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8153 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10301 MB
+# Available Virtual :6789 MB
+#-----------------------------------------------------------
+source FND_top.tcl -notrace

@@ -1,0 +1,40 @@
+module top_module ( 
+    input clk, 
+    input [7:0] d, 
+    input [1:0] sel, 
+    output reg [7:0] q //always로 쓰려면 reg여야 한다
+);
+    //d가 [7:0]이기떄문에, 비트수를 맞춰줘야
+    wire [7:0] d1,d2,d3;
+
+    //module my_dff8 ( input clk, input [7:0] d, output [7:0] q );
+
+    my_dff8 u1(
+        .clk(clk),
+        .d(d),
+        .q(d1)
+    );
+
+    my_dff8 u2(
+        .clk(clk),
+        .d(d1),
+        .q(d2)
+    );
+
+    my_dff8 u3(
+        .clk(clk),
+        .d(d2),
+        .q(d3)
+    );
+    
+    always@(*)begin
+    case(sel)
+    2'b00: q=d;
+    2'b01: q=d1;
+    2'b10: q=d2;
+    2'b11: q=d3;
+
+    endcase
+    end
+
+endmodule
