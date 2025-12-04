@@ -1,0 +1,266 @@
+
+*** Running vivado
+    with args -log FND_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FND_top.tcl
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Dec  4 12:14:30 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source FND_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1415.688 ; gain = 0.027 ; free physical = 2544 ; free virtual = 6093
+Command: read_checkpoint -auto_incremental -incremental /home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/utils_1/imports/synth_1/test_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/utils_1/imports/synth_1/test_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top FND_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 93641
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2128.418 ; gain = 411.660 ; free physical = 1558 ; free virtual = 5108
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FND_top' [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/FND_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_decoder' [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/seg_decoder.v:23]
+INFO: [Synth 8-226] default block is never used [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/seg_decoder.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'seg_decoder' (0#1) [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/seg_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FND_top' (0#1) [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/FND_top.v:23]
+WARNING: [Synth 8-3917] design FND_top has port an[3] driven by constant 0
+WARNING: [Synth 8-3917] design FND_top has port an[2] driven by constant 0
+WARNING: [Synth 8-3917] design FND_top has port an[1] driven by constant 0
+WARNING: [Synth 8-3917] design FND_top has port an[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2204.355 ; gain = 487.598 ; free physical = 1460 ; free virtual = 5011
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2219.199 ; gain = 502.441 ; free physical = 1458 ; free virtual = 5009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2219.199 ; gain = 502.441 ; free physical = 1458 ; free virtual = 5009
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2219.199 ; gain = 0.000 ; free physical = 1458 ; free virtual = 5009
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc]
+WARNING: [Vivado 12-584] No ports matched 's[1]'. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's[0]'. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'f[0]'. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'f[1]'. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'f[2]'. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'f[3]'. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd'. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-MuxDeMux.xdc]
+Parsing XDC File [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-7segment.xdc]
+Finished Parsing XDC File [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-7segment.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/sources_1/new/Basys-3-7segment.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FND_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FND_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.137 ; gain = 0.000 ; free physical = 1447 ; free virtual = 4997
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.137 ; gain = 0.000 ; free physical = 1447 ; free virtual = 4997
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2292.137 ; gain = 575.379 ; free physical = 1445 ; free virtual = 4995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1445 ; free virtual = 4995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1445 ; free virtual = 4995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint /home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.srcs/utils_1/imports/synth_1/test_top.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4995
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design FND_top has port an[3] driven by constant 0
+WARNING: [Synth 8-3917] design FND_top has port an[2] driven by constant 0
+WARNING: [Synth 8-3917] design FND_top has port an[1] driven by constant 0
+WARNING: [Synth 8-3917] design FND_top has port an[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1442 ; free virtual = 4996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1442 ; free virtual = 4996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1442 ; free virtual = 4996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1442 ; free virtual = 4996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     7|
+|2     |IBUF |     4|
+|3     |OBUF |    12|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.141 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.141 ; gain = 510.445 ; free physical = 1444 ; free virtual = 4998
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2300.148 ; gain = 583.383 ; free physical = 1444 ; free virtual = 4998
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2300.148 ; gain = 0.000 ; free physical = 1444 ; free virtual = 4998
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2356.168 ; gain = 0.000 ; free physical = 1739 ; free virtual = 5293
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ae2df2bd
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 16 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 2356.168 ; gain = 940.480 ; free physical = 1739 ; free virtual = 5293
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1872.810; main = 1531.485; forked = 392.997
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3328.992; main = 2356.168; forked = 1028.852
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2380.180 ; gain = 0.000 ; free physical = 1739 ; free virtual = 5293
+INFO: [Common 17-1381] The checkpoint '/home/woodong-notebook/workspace/05_verilog/01_lab/01_combinational_logic/01_combinatinal_logic.runs/synth_1/FND_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file FND_top_utilization_synth.rpt -pb FND_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 12:15:05 2025...
